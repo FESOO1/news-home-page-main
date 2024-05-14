@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --f-all: "Inter", sans-serif;
+    --f-weight-400: 400;
+    --f-weight-700: 700;
+    --f-weight-800: 800;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--f-all);
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: hsl(36, 100%, 99%);
+}
+
+/* NAVBAR */
+
+nav {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-inline: 180px;
+    padding-bottom: 60px;
+}
+
+.logo {
+    display: flex;
+}
+
+.links {
+    display: flex;
+    column-gap: 48px;
+}
+
+.links > a {
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+    font-size: 1rem;
+}
+
+.links > a:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+/* CONTENT */
+
+main {
+    width: 100%;
+    padding-inline: 180px;
+}
+
+.main-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+}
+
+/* GRID LEFT */
+
+.main-grid-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.main-grid-left-inner {
+    display: flex;
+    align-items: center;
+}
+
+
+.main-grid-left-inner > h1 {
+    width: 50%;
+    font-size: 3.5rem;
+    font-weight: var(--f-weight-800);
+    line-height: 55px;
+}
+
+
+.main-grid-left-inner > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    box-sizing: border-box;
+}
+
+.main-grid-left-inner > div > p {
+    color: hsl(236, 13%, 42%);
+}
+
+.main-grid-left-inner > div > button {
+    width: 180px;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: var(--f-weight-700);
+    border: 0;
+    text-transform: uppercase;
+    color: white;
+    background: hsl(5, 85%, 63%);
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.main-grid-left-inner > div > button:hover {
+    background: hsl(240, 100%, 5%);
+}
+
+.main-grid-left > img {
+    width: 100%;
+}
+
+/* GRID RIGHT */
+
+.main-grid-right {
+    background: hsl(240, 100%, 5%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.main-grid-right > h1 {
+    font-size: 2.5rem;
+    color: hsl(35, 77%, 62%);
+}
+
+.main-grid-right > hr {
+    border-top: 1px solid hsl(240, 100%, 5%);
+    border-bottom: 1px solid #a4a5ba;
+}
+
+.subtitles {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.subtitles > h2 {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.subtitles > h2:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+
+.subtitles > p {
+    color: #a4a5ba;
+}
