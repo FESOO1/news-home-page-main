@@ -55,7 +55,8 @@ nav {
 
 main {
     width: 100%;
-    padding-inline: 180px;
+    padding-inline: max(180px, 20px);
+    padding-bottom: 30px;
 }
 
 .main-grid {
@@ -80,18 +81,19 @@ main {
 
 
 .main-grid-left-inner > h1 {
-    width: 50%;
-    font-size: 3.5rem;
+    width: 53%;
+    font-size: 3.8rem;
     font-weight: var(--f-weight-800);
     line-height: 55px;
+    color: hsl(240, 100%, 5%);
 }
 
 
 .main-grid-left-inner > div {
-    width: 50%;
+    width: 47%;
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 40px;
     box-sizing: border-box;
 }
 
@@ -101,15 +103,16 @@ main {
 
 .main-grid-left-inner > div > button {
     width: 180px;
-    height: 50px;
-    font-size: 1.2rem;
-    font-weight: var(--f-weight-700);
+    height: 45px;
+    font-size: 0.9rem;
     border: 0;
+    font-weight: 600;
     text-transform: uppercase;
-    color: white;
+    color: hsl(36, 100%, 99%);
     background: hsl(5, 85%, 63%);
     cursor: pointer;
     transition: 100ms;
+    letter-spacing: 3px;
 }
 
 .main-grid-left-inner > div > button:hover {
@@ -158,4 +161,40 @@ main {
 
 .subtitles > p {
     color: #a4a5ba;
+}
+
+/* BOTTOM GRIDS */
+
+.bottom-grids {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+
+.bottom-grid-one,
+.bottom-grid-two,
+.bottom-grid-three {
+    display: flex;
+    height: 130px;
+    column-gap: 20px;
+}
+
+.inner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inner-text > h1 {
+    color: hsl(233, 8%, 79%);
+}
+
+.inner-text > h2 {
+    font-size: 1.2rem;
+}
+
+.inner-text > p {
+    color: #727176;
+    padding-right: 15px;
 }
